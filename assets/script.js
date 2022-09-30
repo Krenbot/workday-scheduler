@@ -1,6 +1,5 @@
 var currentEl = document.getElementById("currentDay");
 var currentTime = moment().format("dddd, MMM Do")
-// var textArea = getElementById("textarea")
 
 console.log(currentEl)
 
@@ -26,7 +25,6 @@ function timeColors() {
         $(this).addClass('future')
     }
 }
-
 timeColors();
 
 //btn click listener
