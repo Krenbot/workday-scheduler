@@ -9,7 +9,7 @@ console.log(currentTime)
 function timeColors() {
     var currentTime = moment().format(H);
     var textArea = $('textarea');
-    console.log(currentTime)
+    console.log(currentTime);
     // if current time > text area = past
     if (textArea < currentTime) {
         $(this).addClass('past')
@@ -17,11 +17,15 @@ function timeColors() {
     } else if (textArea === currentTime) {
         $(this).addClass('present')
         // if current time < text area = future
-    } else (textArea > currentTime) {
+    } else (textArea > currentTime) ;{
         $(this).addClass('future')
     }
 }
 
-//Save btn click listener
+timeColors()
+
+//btn click listener
+function btnClick() {
+}
 
 //save btn save to local storage
