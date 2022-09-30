@@ -17,6 +17,8 @@
   <title>Work Day Scheduler</title>
 </head>
 
+<!-- Given header HTML -->
+
 <body>
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
@@ -24,10 +26,9 @@
     <p id="currentDay" class="lead"></p>
   </header>
 
-
+  <!-- Timeblock Definition -->
   <div class="container">
 
-    <!-- Timeblocks go here -->
     <div class="row time-block">
       <div class="hour col-1">9AM</div>
       <textarea id='9' class="col-10"></textarea>
@@ -40,13 +41,11 @@
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
 
-
     <div class="row time-block">
       <div class="hour col">11AM</div>
       <textarea id='11' class="col-10"></textarea>
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
-
 
     <div class="row time-block">
       <div class="hour col">12AM</div>
@@ -54,13 +53,11 @@
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
 
-
     <div class="row time-block">
       <div class="hour col">1PM</div>
       <textarea id='13' class="col-10"></textarea>
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
-
 
     <div class="row time-block">
       <div class="hour col">2PM</div>
@@ -68,13 +65,11 @@
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
 
-
     <div class="row time-block">
       <div class="hour col">3PM</div>
       <textarea id='15' class="col-10"></textarea>
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
-
 
     <div class="row time-block">
       <div class="hour col">4PM</div>
@@ -82,19 +77,17 @@
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
 
-
     <div class="row time-block">
       <div class="hour col">5PM</div>
       <textarea id='17' class="col-10"></textarea>
       <button class="saveBtn col-1"><i class="far fa-save"></i></button>
     </div>
+    
   </div>
-  </div>
-  
-  <!-- jquery/Moment Links -->
+
+  <!-- jquery/Moment/Custom JS Links -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <!-- Custom JS -->
   <script src="assets/script.js"></script>
 </body>
 
