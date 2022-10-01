@@ -1,30 +1,30 @@
 var currentEl = document.getElementById("currentDay");
 var currentTime = moment().format("dddd, MMM Do")
-
-console.log(currentEl)
-
+var textBlock = $(".col-8")
 //Displays current time in header
 currentEl.innerText = currentTime;
 
-//Changes hours to relative colors
-// function timeColors() {
+// Changes hours to relative colors
+function timeColors() {
 
-    var current = moment().format(H);
-    var textArea = $('#textarea');
+    var current = moment().hours();
+    console.log(current)
+    
+    $(".time-block").each(function) {
+        var hour = parseInt($(this).attr("id"));
+    }
+    
+    if (hour < current) {
+       
+        $(this).addClass('past')
 
-//     console.log(currentTime)
-
-    // // if current time > text area = past
-    // if (textArea < current) {
-    //     $(this).addClass('past')
-    //     // if current time = text area = present
-    // } else if (textArea === current) {
-    //     $(this).addClass('present')
-    //     // if current time < text area = future
-    // } else (textArea > current) {
-    //     $(this).addClass('future')
-    // }
-
+    } else if (hour === current) {
+        $(this).addClass('present')
+        
+    } else {
+        $(this).addClass('future')
+    }
+}
 timeColors();
 
 //btn click listener
