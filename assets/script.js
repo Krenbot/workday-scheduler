@@ -36,7 +36,7 @@ $(".saveBtn").click(function () {
 
 //Retrives items from local storage on reload
 for (let i = 0; i < hours.length; i++){
-    s$('#' + i).val(localStorage.getItem(i))
+    $('#' + i).val(localStorage.getItem(i))
 }
 
 //Courtesy of Stack Overflow - 
