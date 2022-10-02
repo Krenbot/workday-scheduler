@@ -1,6 +1,29 @@
-#Work Day Scheduler
+# Work Day Scheduler
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+
+## Deployed Link
+
+https://krenbot.github.io/workday-scheduler/
+
+## Description
+
+## Technologies Used
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* moment.js
+
+## Challenges
+* Appending from localStorage in JavaScript
+* moment.js formatting/syntax
+
+## Future Implementations
+* Allow users to input their own 8hr workday blocks
+* Implement dropdown list with calendar integration
+* Allow users to pick their own past/present/future colors
+
 
 ## User Story
 
@@ -28,6 +51,14 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-The following animation demonstrates the application functionality:
+## Mock-up
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./assets/05-third-party-apis-homework-demo.gif)
+
+## Installation
+1. Download/clone repository to local machine
+2. Open index.html in default browser
+
+# License
+MIT © Krenbot
+
