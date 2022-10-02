@@ -36,7 +36,7 @@ $(".saveBtn").click(function () {
 });
 
 
-$('hour9 textarea').val(localStorage.getItem(time, text));
+$('9 textarea').val(localStorage.getItem('9'));
 
 // https://www.geeksforgeeks.org/how-to-change-a-button-text-on-click-using-localstorage-in-javascript/
 
