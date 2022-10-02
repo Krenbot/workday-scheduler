@@ -23,29 +23,25 @@ function timeColors() {
         }
     });
 }
+
 timeColors()
 
 // //Save input in local storage
 $(".saveBtn").click(function () {
     var text = $(this).siblings('textarea').val();
     var time = $(this).parent().attr("id");
-    
+
     localStorage.setItem(time, text);
     console.log(time, text)
 });
+
+
+$('hour9 textarea').val(localStorage.getItem(time, text));
+
+// https://www.geeksforgeeks.org/how-to-change-a-button-text-on-click-using-localstorage-in-javascript/
 
 //Retrives items from local storage on reload
 //Grab textarea component and make the val = val in local storage
 // for (let i = 0; i < XXX.length; i++){
 //     $('#' + i).val(localStorage.getItem(i))
 // }
-
-//Courtesy of Stack Overflow - 
-$(document).ready(function () {
-    $("button").on("click", function () {
-        localStorage.setItem("text").val();
-        console.log(localStorage.val());
-    })
-});
-
-// https://www.geeksforgeeks.org/how-to-change-a-button-text-on-click-using-localstorage-in-javascript/
