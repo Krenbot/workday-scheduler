@@ -8,8 +8,7 @@ currentEl.innerText = currentTime;
 //Changes colors of timeblocks to past/present/future
 function timeColors() {
     var current = moment().hours();
-    // console.log(current);
-
+    
     $('.time-block').each(function () {
         var hourBlock = parseInt($(this).attr('id'));
         // console.log(hourBlock);
@@ -35,8 +34,7 @@ $(".saveBtn").click(function () {
     console.log(time, text)
 });
 
-
-
+//Retrieve Inputs from local storage/place in hours
 $('#9 textarea').val(localStorage.getItem('9'));
 $('#10 textarea').val(localStorage.getItem('10'));
 $('#11 textarea').val(localStorage.getItem('11'));
