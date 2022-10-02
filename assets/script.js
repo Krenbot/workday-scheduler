@@ -31,20 +31,21 @@ $(".saveBtn").click(function () {
     var time = $(this).parent().attr("id");
     
     localStorage.setItem(time, text);
-    // console.log(text)
+    console.log(time, text)
 });
 
 //Retrives items from local storage on reload
-for (let i = 0; i < hours.length; i++){
-    $('#' + i).val(localStorage.getItem(i))
-}
+//Grab textarea component and make the val = val in local storage
+// for (let i = 0; i < XXX.length; i++){
+//     $('#' + i).val(localStorage.getItem(i))
+// }
 
 //Courtesy of Stack Overflow - 
-// $(document).ready(function () {
-//     $(".btnlocalStorage").on("click", function () {
-//         localStorage.setItem("myContent", $(".TextBoxColors-17").val());
-//         console.log(localStorage.getItem("myContent"));
-//     })
-// });
+$(document).ready(function () {
+    $("button").on("click", function () {
+        localStorage.setItem("text").val();
+        console.log(localStorage.val());
+    })
+});
 
-//save btn save to local storage
+// https://www.geeksforgeeks.org/how-to-change-a-button-text-on-click-using-localstorage-in-javascript/
