@@ -18,7 +18,7 @@ function timeColors() {
         if (hourBlock === current) {
             $(this).addClass("present")
         } else if (hourBlock < current) {
-            $(this).removeClass('past')
+            $(this).addClass('past')
         } else {
             $(this).addClass('future')
         }
@@ -34,6 +34,8 @@ $(".saveBtn").click(function () {
     localStorage.setItem(time, text);
     console.log(time, text)
 });
+
+
 
 $('#9 textarea').val(localStorage.getItem('9'));
 $('#10 textarea').val(localStorage.getItem('10'));
