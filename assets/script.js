@@ -5,6 +5,7 @@ var saveBtnEl = document.querySelectorAll('.saveBtn')
 //Displays current time in header
 currentEl.innerText = currentTime;
 
+//Changes colors of timeblocks to past/present/future
 function timeColors() {
     var current = moment().hours();
     // console.log(current);
@@ -23,7 +24,6 @@ function timeColors() {
         }
     });
 }
-
 timeColors()
 
 // //Save input in local storage
@@ -35,13 +35,12 @@ $(".saveBtn").click(function () {
     console.log(time, text)
 });
 
-
-$('9 textarea').val(localStorage.getItem('9'));
-
-// https://www.geeksforgeeks.org/how-to-change-a-button-text-on-click-using-localstorage-in-javascript/
-
-//Retrives items from local storage on reload
-//Grab textarea component and make the val = val in local storage
-// for (let i = 0; i < XXX.length; i++){
-//     $('#' + i).val(localStorage.getItem(i))
-// }
+$('#9 textarea').val(localStorage.getItem('9'));
+$('#10 textarea').val(localStorage.getItem('10'));
+$('#11 textarea').val(localStorage.getItem('11'));
+$('#12 textarea').val(localStorage.getItem('12'));
+$('#13 textarea').val(localStorage.getItem('13'));
+$('#14 textarea').val(localStorage.getItem('14'));
+$('#15 textarea').val(localStorage.getItem('15'));
+$('#16 textarea').val(localStorage.getItem('16'));
+$('#17textarea').val(localStorage.getItem('17'));
