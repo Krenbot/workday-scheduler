@@ -35,12 +35,18 @@ $(".saveBtn").click(function () {
 });
 
 //Retrieve Inputs from local storage/place in hours
-$('#9 textarea').val(localStorage.getItem('9'));
-$('#10 textarea').val(localStorage.getItem('10'));
-$('#11 textarea').val(localStorage.getItem('11'));
-$('#12 textarea').val(localStorage.getItem('12'));
-$('#13 textarea').val(localStorage.getItem('13'));
-$('#14 textarea').val(localStorage.getItem('14'));
-$('#15 textarea').val(localStorage.getItem('15'));
-$('#16 textarea').val(localStorage.getItem('16'));
-$('#17textarea').val(localStorage.getItem('17'));
+// $('#9 textarea').val(localStorage.getItem('9'));
+// $('#10 textarea').val(localStorage.getItem('10'));
+// $('#11 textarea').val(localStorage.getItem('11'));
+// $('#12 textarea').val(localStorage.getItem('12'));
+// $('#13 textarea').val(localStorage.getItem('13'));
+// $('#14 textarea').val(localStorage.getItem('14'));
+// $('#15 textarea').val(localStorage.getItem('15'));
+// $('#16 textarea').val(localStorage.getItem('16'));
+// $('#17textarea').val(localStorage.getItem('17'));
+
+for (let i = 9; i <= 17; i++){
+    console.log(i)
+    $('#' + i + ' textarea').val(localStorage.getItem(i));
+    console.log('#' + i +' textarea')
+}
